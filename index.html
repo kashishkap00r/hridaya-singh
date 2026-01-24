@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="In-house legal counsel focused on corporate legal, compliance, contract management, and IP support." />
+  <meta name="description" content="In-house legal counsel focused on building and scaling legal operations, high-volume SaaS contracting, and cross-border regulatory compliance." />
   <title>Hridaya Singh — Legal Counsel</title>
 
   <!-- Favicon -->
@@ -11,7 +11,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Hridaya Singh — Legal Counsel" />
-  <meta property="og:description" content="Corporate legal, compliance, contracts, IP support." />
+  <meta property="og:description" content="Building and scaling in-house legal for regulated, fast-growing tech companies." />
   <meta property="og:type" content="website" />
 
   <style>
@@ -155,8 +155,8 @@
     .avatarWrap{
       flex: 0 0 auto;
       width: 168px;
-      height: 210px;              /* taller than wide => oval */
-      border-radius: 999px;       /* forces ellipse */
+      height: 210px;
+      border-radius: 999px;
       overflow: hidden;
       border: 1px solid var(--line);
       background: rgba(255,255,255,.35);
@@ -172,7 +172,6 @@
       position:absolute;
       inset:0;
       border-radius:999px;
-      /* subtle highlight ring */
       background: radial-gradient(120px 160px at 35% 30%, rgba(255,255,255,.28), transparent 60%);
       pointer-events:none;
     }
@@ -182,8 +181,8 @@
     .avatar{
       width:100%;
       height:100%;
-      object-fit: cover;          /* perfect crop */
-      object-position: 50% 35%;   /* bias upward for faces */
+      object-fit: cover;
+      object-position: 50% 35%;
       display:block;
     }
 
@@ -216,7 +215,7 @@
       margin:0;
       color:var(--muted);
       font-size:16px;
-      max-width:72ch;
+      max-width:78ch;
     }
 
     .ctas{
@@ -345,16 +344,13 @@
   </style>
 
   <script>
-    // Theme boot (runs ASAP to avoid flash)
     (function () {
       try {
-        const saved = localStorage.getItem("theme"); // "light" | "dark" | null
+        const saved = localStorage.getItem("theme");
         const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
         const theme = saved || (prefersDark ? "dark" : "light");
         document.documentElement.setAttribute("data-theme", theme);
-      } catch (e) {
-        // If storage blocked, just default to system via CSS root (light) and do nothing
-      }
+      } catch (e) {}
     })();
   </script>
 </head>
@@ -372,13 +368,11 @@
           <a href="#services">Focus</a>
           <a href="#experience">Experience</a>
           <a href="#credentials">Credentials</a>
-          <a href="#writing">Publications</a>
+          <a href="#recognition">Recognition</a>
           <a href="#contact">Contact</a>
         </nav>
 
-        <!-- Theme toggle -->
         <button class="iconBtn" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
-          <!-- icon swaps in JS -->
           <svg id="themeIcon" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.5 6.5 0 1 0 9.8 9.8Z"></path>
           </svg>
@@ -391,9 +385,12 @@
         <div class="heroTop">
           <div class="heroText">
             <div class="kicker"><span aria-hidden="true"></span> In-house Legal Counsel • Mumbai</div>
-            <h1>Practical, business-first legal help.</h1>
+
+            <h1>Building and scaling in-house legal for regulated, fast-growing tech companies.</h1>
+
             <p class="sub">
-              I work across corporate legal, compliance, contract management, and IP support—helping teams move fast without creating avoidable risk.
+              In-house legal counsel with hands-on experience setting up legal operations from scratch, managing high-volume SaaS contracting,
+              cross-border regulatory compliance, and advising leadership teams in complex, high-stakes environments.
             </p>
 
             <div class="ctas">
@@ -402,15 +399,14 @@
               <a class="btn" href="#contact">Quick intro</a>
             </div>
 
-            <div class="metaRow" aria-label="Highlights">
-              <div class="pill">Contract management</div>
-              <div class="pill">Corporate compliance</div>
-              <div class="pill">IP support (trademarks/copyright)</div>
-              <div class="pill">Secretarial work</div>
+            <div class="metaRow" aria-label="Credibility">
+              <div class="pill">Built in-house legal from ground up</div>
+              <div class="pill">500+ SaaS & commercial agreements</div>
+              <div class="pill">100+ trademarks • 400+ copyrights</div>
+              <div class="pill">Cross-border: India, US, EU, APAC</div>
             </div>
           </div>
 
-          <!-- Avatar -->
           <div class="avatarWrap" aria-label="Profile photo">
             <img class="avatar" src="static/me.webp" alt="Profile photo" />
           </div>
@@ -419,22 +415,34 @@
 
       <section id="services">
         <div class="sectionTitle">
-          <h3>What I help with</h3>
-          <div class="hint">Clear, actionable, no drama</div>
+          <h3>Focus</h3>
+          <div class="hint">High-leverage work</div>
         </div>
 
         <div class="grid">
           <div class="card span-4">
-            <h2>Contracts</h2>
-            <p>Drafting, review, negotiation support, risk flags, and closing pending contracts efficiently.</p>
+            <h2>Contracting at scale (SaaS & enterprise)</h2>
+            <p>Drafted, reviewed, and negotiated 500+ SaaS and commercial agreements across SME, mid-market, and enterprise customers.</p>
           </div>
+
           <div class="card span-4">
-            <h2>Compliance</h2>
-            <p>Corporate and secretarial compliance with a focus on reliable processes and clean documentation.</p>
+            <h2>Regulatory & compliance readiness</h2>
+            <p>Owned compliance frameworks across data protection (DPDP, GDPR) and financial regulations (AML/KYC) in regulated environments.</p>
           </div>
+
           <div class="card span-4">
-            <h2>IP support</h2>
-            <p>Coordinating filings and partners for trademarks/copyright; keeping the workflow moving.</p>
+            <h2>Cross-border legal operations</h2>
+            <p>Managed multi-jurisdiction work across India, US, EU, and APAC—aligning contracts, licensing, and regulatory requirements.</p>
+          </div>
+
+          <div class="card span-6">
+            <h2>IP strategy & asset protection</h2>
+            <p>Led IP strategy end-to-end, securing 100+ trademarks and 400+ copyright registrations to protect brand, product, and creative assets.</p>
+          </div>
+
+          <div class="card span-6">
+            <h2>Governance & leadership advisory</h2>
+            <p>Worked directly with CXOs and boards on corporate governance, fundraising, restructuring, risk assessments, and strategic decisions.</p>
           </div>
         </div>
       </section>
@@ -442,43 +450,52 @@
       <section id="experience">
         <div class="sectionTitle">
           <h3>Experience</h3>
-          <div class="hint">Snapshot</div>
+          <div class="hint">Selected highlights</div>
         </div>
 
         <div class="card span-12 timeline">
           <div class="role">
             <div class="when">Jul 2024 — Present</div>
             <div class="what">
-              <strong>Deputy Manager Legal — HubbleHox (Ampersand Group)</strong>
-              <span class="place">Mumbai • On-site</span>
+              <strong>Deputy Manager – Legal — HubbleHox Technologies (Ampersand Group)</strong>
+              <span class="place">Mumbai</span>
               <ul class="clean bul">
-                <li>Contract management and legal ops support.</li>
-                <li>Compliance coordination and stakeholder alignment.</li>
-                <li>IPR support (trademarks/copyrights).</li>
+                <li>Founding member of the legal team, building end-to-end in-house legal operations from scratch.</li>
+                <li>Drafted the company’s first standard customer agreements and NDA templates, setting the baseline for all client engagements.</li>
+                <li>Led drafting and negotiation across vendor, payment aggregation, franchise, reseller, DPA, and cross-border commercial agreements.</li>
+                <li>Updated legal frameworks to align with DPDP, GDPR, AML/KYC, and evolving financial regulations.</li>
+                <li>Managed licensing, due diligence, and regulatory compliance for partnerships across US, EU, and APAC.</li>
+                <li>Oversaw IP strategy: 100+ trademarks and 400+ copyright filings.</li>
+                <li>Advised CXOs and handled board processes, governance, audits, and complex operational matters.</li>
+                <li>Resolved disputes through negotiation/mediation before escalation to litigation.</li>
               </ul>
             </div>
           </div>
 
           <div class="role">
-            <div class="when">Dec 2022 — Jun 2024</div>
+            <div class="when">Dec 2022 — Jul 2024</div>
             <div class="what">
-              <strong>Legal & Secretarial — Bizom</strong>
-              <span class="place">Bengaluru • On-site</span>
+              <strong>Legal Executive — Mobisy Technologies (Bizom)</strong>
+              <span class="place">Bengaluru</span>
               <ul class="clean bul">
-                <li>Managed corporate legal + secretarial responsibilities.</li>
-                <li>Supported fundraising and due diligence workstreams.</li>
+                <li>Closed 500+ SaaS service agreements and NDAs across SME, mid-market, and enterprise customers.</li>
+                <li>Supported M&A transactions, including legal due diligence and negotiation of key IP reps and warranties.</li>
+                <li>Managed legal aspects of fundraising exceeding ₹10+ Crores, including review of shareholder and share purchase agreements.</li>
+                <li>Handled cross-border customer agreements for subsidiaries in the UK, UAE, Indonesia, and Vietnam.</li>
+                <li>Led governance/secretarial work: board meetings, agendas, filings, and ROC compliance.</li>
+                <li>Advised CEOs, board members, and department heads on organizational legal and compliance matters.</li>
               </ul>
             </div>
           </div>
 
           <div class="role">
-            <div class="when">Aug 2021 — Nov 2022</div>
+            <div class="when">Apr 2021 — Nov 2022</div>
             <div class="what">
-              <strong>Associate Legal Counsel — Manoj Dwivedi & Associates</strong>
+              <strong>Associate Lawyer — Manoj Dwivedi & Associates</strong>
               <span class="place">Indore</span>
               <ul class="clean bul">
-                <li>Civil & criminal litigation support.</li>
-                <li>Dispute resolution and legal research/drafting.</li>
+                <li>Litigated 150+ civil, criminal, and commercial matters, including representation before the Madhya Pradesh High Court.</li>
+                <li>Represented government bodies, public sector entities, and statutory authorities in complex legal proceedings.</li>
               </ul>
             </div>
           </div>
@@ -493,46 +510,42 @@
 
         <div class="grid">
           <div class="card span-6">
-            <h2>LLM — Banking, Corporate, Finance & Securities Law</h2>
-            <p>OP Jindal University (Aug 2022 — Sep 2023)</p>
+            <h2>LL.M. — Banking, Corporate, Finance & Securities Law</h2>
+            <p>O.P. Jindal Global University</p>
           </div>
+
           <div class="card span-6">
-            <h2>LLB — Banking, Corporate, Finance & Securities Law</h2>
-            <p>Devi Ahilya Vishwavidyalaya (Jul 2016 — Jul 2021)</p>
+            <h2>B.B.A. LL.B.</h2>
+            <p>Prestige Institute of Management & Research, Department of Law</p>
           </div>
 
           <div class="card span-6">
             <h2>Certification of Practice</h2>
-            <p>Bar Council of India (Issued Jul 2021)</p>
+            <p>Bar Council of India</p>
           </div>
+
           <div class="card span-6">
-            <h2>Core skills</h2>
-            <p>Dispute resolution • Legal research & drafting • Public interest litigation</p>
+            <h2>Company Secretary (Professional Programme)</h2>
+            <p>Institute of Company Secretaries of India (pursuing)</p>
           </div>
         </div>
       </section>
 
-      <section id="writing">
+      <section id="recognition">
         <div class="sectionTitle">
-          <h3>Publications & recognition</h3>
-          <div class="hint">Selected</div>
+          <h3>Recognition</h3>
+          <div class="hint">Signals that matter</div>
         </div>
 
         <div class="grid">
           <div class="card span-6">
-            <h2>Publications</h2>
-            <ul class="clean">
-              <li><strong>Application of Contempt of Court in Indian Democracy</strong> (Oct 2020)</li>
-              <li><strong>Obsoleteness of Article 370 and its unceasing impression on Indian Society</strong> (Oct 2019)</li>
-            </ul>
+            <h2>Spot Award — HubbleHox</h2>
+            <p>Recognized for building and streamlining legal operations, compliance frameworks, and IP strategy within months of joining.</p>
           </div>
 
           <div class="card span-6">
-            <h2>Recognition</h2>
-            <ul class="clean">
-              <li><strong>Spot Award</strong> (Dec 2024) — streamlining contracts, compliance, and IPR support.</li>
-              <li><strong>Leadership Excellence Recognition</strong> (Jul 2023) — independently managing corporate legal & secretarial functions.</li>
-            </ul>
+            <h2>Leadership Program Selection — Mobisy (Bizom)</h2>
+            <p>Recognized for independently managing corporate legal and secretarial functions and providing strategic support to leadership.</p>
           </div>
         </div>
       </section>
@@ -540,15 +553,14 @@
       <section id="contact">
         <div class="sectionTitle">
           <h3>Contact</h3>
-          <div class="hint">Fastest ways to reach me</div>
+          <div class="hint">Recruiter-friendly</div>
         </div>
 
         <div class="grid">
           <div class="card span-8">
-            <h2>Let’s connect</h2>
-            <p>
-              If you’re looking for support on contracts, compliance, or corporate legal workflows, email is best.
-            </p>
+            <h2>Currently open to senior in-house legal roles in technology-driven organizations.</h2>
+            <p>Best way to reach me: email. LinkedIn also works.</p>
+
             <div class="ctas" style="margin-top:14px">
               <a class="btn primary" href="mailto:hridayasingh0598@gmail.com">hridayasingh0598@gmail.com</a>
               <a class="btn" href="https://www.linkedin.com/in/hridayasingh" target="_blank" rel="noreferrer">LinkedIn profile</a>
@@ -557,9 +569,9 @@
 
           <div class="card span-4">
             <h2>Based in</h2>
-            <p>Mumbai, Maharashtra, India</p>
+            <p>Mumbai, India</p>
             <p style="margin-top:10px;color:var(--muted);font-size:13px">
-              Prefer a short note with context + timeline. I reply faster.
+              If you’re reaching out for a role, a short note with the level, scope, and timeline helps.
             </p>
           </div>
         </div>
@@ -582,9 +594,7 @@
       document.documentElement.setAttribute("data-theme", theme);
       try { localStorage.setItem("theme", theme); } catch(e) {}
 
-      // swap icon
       if (theme === "dark") {
-        // sun
         themeIcon.innerHTML = `
           <circle cx="12" cy="12" r="4"></circle>
           <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
@@ -592,7 +602,6 @@
         toggleBtn.setAttribute("aria-label", "Switch to light mode");
         toggleBtn.title = "Switch to light mode";
       } else {
-        // moon
         themeIcon.innerHTML = `
           <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.5 6.5 0 1 0 9.8 9.8Z"></path>
         `;
@@ -605,7 +614,6 @@
       return document.documentElement.getAttribute("data-theme") || "light";
     }
 
-    // ensure icon matches current theme on load
     setTheme(getCurrentTheme());
 
     toggleBtn.addEventListener("click", () => {
