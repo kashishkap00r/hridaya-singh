@@ -6,6 +6,9 @@
   <meta name="description" content="In-house legal counsel focused on corporate legal, compliance, contract management, and IP support." />
   <title>Hridaya Singh — Legal Counsel</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="static/favikon.svg" />
+
   <!-- Open Graph -->
   <meta property="og:title" content="Hridaya Singh — Legal Counsel" />
   <meta property="og:description" content="Corporate legal, compliance, contracts, IP support." />
@@ -13,16 +16,38 @@
 
   <style>
     :root{
-      --bg:#0b0c10;
-      --card:#12141a;
-      --text:#e9edf5;
-      --muted:#a9b2c3;
-      --line:rgba(255,255,255,.08);
-      --accent:#7dd3fc;
-      --accent2:#a78bfa;
-      --shadow: 0 16px 50px rgba(0,0,0,.45);
+      /* shared */
       --radius:18px;
       --max: 1040px;
+      --shadow: 0 16px 50px rgba(0,0,0,.18);
+      --shadow-strong: 0 16px 50px rgba(0,0,0,.45);
+
+      /* LIGHT (default) */
+      --bg:#f6f7fb;
+      --card:rgba(255,255,255,.75);
+      --text:#0b1220;
+      --muted:#4b5568;
+      --line:rgba(2,6,23,.10);
+      --accent:#0284c7;
+      --accent2:#7c3aed;
+
+      --bgGlow1: rgba(2,132,199,.10);
+      --bgGlow2: rgba(124,58,237,.10);
+      --glass: rgba(255,255,255,.65);
+    }
+
+    html[data-theme="dark"]{
+      --bg:#0b0c10;
+      --card:rgba(18,20,26,.72);
+      --text:#e9edf5;
+      --muted:#a9b2c3;
+      --line:rgba(255,255,255,.10);
+      --accent:#7dd3fc;
+      --accent2:#a78bfa;
+
+      --bgGlow1: rgba(125,211,252,.16);
+      --bgGlow2: rgba(167,139,250,.14);
+      --glass: rgba(18,20,26,.70);
     }
 
     *{box-sizing:border-box}
@@ -31,8 +56,8 @@
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
       background:
-        radial-gradient(1200px 500px at 12% -10%, rgba(125,211,252,.18), transparent 60%),
-        radial-gradient(900px 450px at 88% 0%, rgba(167,139,250,.16), transparent 60%),
+        radial-gradient(1200px 500px at 12% -10%, var(--bgGlow1), transparent 60%),
+        radial-gradient(900px 450px at 88% 0%, var(--bgGlow2), transparent 60%),
         var(--bg);
       color:var(--text);
       line-height:1.55;
@@ -42,60 +67,146 @@
     a:hover{opacity:.9}
 
     .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 70px}
+
     .nav{
       display:flex; align-items:center; justify-content:space-between;
-      gap:16px; padding:14px 14px;
+      gap:14px; padding:12px 12px;
       border:1px solid var(--line);
-      background:rgba(18,20,26,.7);
+      background: var(--glass);
       backdrop-filter: blur(10px);
       border-radius:999px;
       position:sticky; top:14px; z-index:50;
+      box-shadow: var(--shadow);
     }
-    .brand{display:flex; align-items:center; gap:10px; padding-left:4px}
+
+    .brand{display:flex; align-items:center; gap:10px; padding-left:6px}
     .dot{
       width:10px; height:10px; border-radius:999px;
       background: linear-gradient(135deg, var(--accent), var(--accent2));
-      box-shadow: 0 0 0 6px rgba(125,211,252,.08);
+      box-shadow: 0 0 0 6px rgba(2,132,199,.10);
+    }
+    html[data-theme="dark"] .dot{
+      box-shadow: 0 0 0 6px rgba(125,211,252,.10);
     }
     .brand strong{font-size:14px; letter-spacing:.2px}
-    .navlinks{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
+
+    .rightNav{display:flex; align-items:center; gap:8px; flex-wrap:wrap; justify-content:flex-end}
+    .navlinks{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+
     .navlinks a{
       font-size:13px; color:var(--muted);
       padding:8px 10px; border-radius:999px;
       border:1px solid transparent;
     }
-    .navlinks a:hover{color:var(--text); border-color:var(--line); background:rgba(255,255,255,.03)}
+    .navlinks a:hover{
+      color:var(--text);
+      border-color:var(--line);
+      background:rgba(255,255,255,.25);
+    }
+    html[data-theme="dark"] .navlinks a:hover{
+      background:rgba(255,255,255,.04);
+    }
+
+    .iconBtn{
+      display:inline-flex; align-items:center; justify-content:center;
+      width:38px; height:38px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.35);
+      cursor:pointer;
+      transition: transform .12s ease;
+    }
+    html[data-theme="dark"] .iconBtn{background:rgba(255,255,255,.04)}
+    .iconBtn:hover{transform: translateY(-1px)}
+    .iconBtn svg{width:18px; height:18px; fill: none; stroke: var(--text); stroke-width: 1.7}
 
     .hero{
       margin-top:26px;
       border:1px solid var(--line);
-      background: linear-gradient(180deg, rgba(18,20,26,.9), rgba(18,20,26,.6));
+      background: linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.55));
       border-radius: var(--radius);
-      padding:28px 22px;
+      padding:26px 22px;
       box-shadow: var(--shadow);
       overflow:hidden;
       position:relative;
     }
+    html[data-theme="dark"] .hero{
+      background: linear-gradient(180deg, rgba(18,20,26,.92), rgba(18,20,26,.62));
+      box-shadow: var(--shadow-strong);
+    }
     .hero:before{
       content:"";
       position:absolute; inset:-2px;
-      background: radial-gradient(700px 260px at 15% 20%, rgba(125,211,252,.16), transparent 55%),
-                  radial-gradient(650px 260px at 90% 35%, rgba(167,139,250,.14), transparent 55%);
+      background:
+        radial-gradient(700px 260px at 15% 20%, var(--bgGlow1), transparent 55%),
+        radial-gradient(650px 260px at 90% 35%, var(--bgGlow2), transparent 55%);
       pointer-events:none;
     }
     .hero > *{position:relative}
+
+    .heroTop{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:18px;
+    }
+
+    /* ===== Avatar (OVAL) ===== */
+    .avatarWrap{
+      flex: 0 0 auto;
+      width: 168px;
+      height: 210px;              /* taller than wide => oval */
+      border-radius: 999px;       /* forces ellipse */
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.35);
+      box-shadow: 0 18px 50px rgba(0,0,0,.18);
+      position:relative;
+    }
+    html[data-theme="dark"] .avatarWrap{
+      background: rgba(255,255,255,.04);
+      box-shadow: 0 18px 50px rgba(0,0,0,.45);
+    }
+    .avatarWrap:after{
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius:999px;
+      /* subtle highlight ring */
+      background: radial-gradient(120px 160px at 35% 30%, rgba(255,255,255,.28), transparent 60%);
+      pointer-events:none;
+    }
+    html[data-theme="dark"] .avatarWrap:after{
+      background: radial-gradient(120px 160px at 35% 30%, rgba(255,255,255,.10), transparent 60%);
+    }
+    .avatar{
+      width:100%;
+      height:100%;
+      object-fit: cover;          /* perfect crop */
+      object-position: 50% 35%;   /* bias upward for faces */
+      display:block;
+      transform: scale(1.02);     /* removes 1px edge gaps on some renders */
+    }
+
     .kicker{
       display:inline-flex; align-items:center; gap:10px;
       font-size:13px; color:var(--muted);
       padding:8px 12px; border-radius:999px;
-      background:rgba(255,255,255,.03);
+      background:rgba(255,255,255,.35);
       border:1px solid var(--line);
+    }
+    html[data-theme="dark"] .kicker{
+      background:rgba(255,255,255,.04);
     }
     .kicker span{
       width:8px; height:8px; border-radius:999px;
       background: var(--accent);
-      box-shadow: 0 0 0 6px rgba(125,211,252,.08);
+      box-shadow: 0 0 0 6px rgba(2,132,199,.10);
     }
+    html[data-theme="dark"] .kicker span{
+      box-shadow: 0 0 0 6px rgba(125,211,252,.10);
+    }
+
     h1{
       margin:14px 0 6px;
       font-size:40px;
@@ -108,8 +219,9 @@
       font-size:16px;
       max-width:72ch;
     }
+
     .ctas{
-      margin-top:18px;
+      margin-top:16px;
       display:flex; gap:10px; flex-wrap:wrap;
     }
     .btn{
@@ -118,17 +230,24 @@
       padding:10px 14px;
       border-radius:999px;
       border:1px solid var(--line);
-      background:rgba(255,255,255,.03);
+      background:rgba(255,255,255,.35);
       color:var(--text);
       font-size:14px;
+      transition: transform .12s ease;
     }
+    html[data-theme="dark"] .btn{background:rgba(255,255,255,.04)}
     .btn.primary{
-      border-color: rgba(125,211,252,.35);
-      background: linear-gradient(135deg, rgba(125,211,252,.16), rgba(167,139,250,.12));
+      border-color: rgba(2,132,199,.28);
+      background: linear-gradient(135deg, rgba(2,132,199,.14), rgba(124,58,237,.10));
+    }
+    html[data-theme="dark"] .btn.primary{
+      border-color: rgba(125,211,252,.28);
+      background: linear-gradient(135deg, rgba(125,211,252,.14), rgba(167,139,250,.10));
     }
     .btn:hover{transform: translateY(-1px)}
+
     .metaRow{
-      margin-top:16px;
+      margin-top:14px;
       display:flex; flex-wrap:wrap; gap:10px;
       color:var(--muted);
       font-size:13px;
@@ -137,8 +256,9 @@
       padding:8px 10px;
       border:1px solid var(--line);
       border-radius:999px;
-      background:rgba(255,255,255,.02);
+      background:rgba(255,255,255,.28);
     }
+    html[data-theme="dark"] .pill{background:rgba(255,255,255,.03)}
 
     section{margin-top:22px}
     .grid{
@@ -148,9 +268,13 @@
     }
     .card{
       border:1px solid var(--line);
-      background: rgba(18,20,26,.7);
+      background: rgba(255,255,255,.75);
       border-radius: var(--radius);
       padding:18px 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,.12);
+    }
+    html[data-theme="dark"] .card{
+      background: rgba(18,20,26,.72);
       box-shadow: 0 10px 40px rgba(0,0,0,.25);
     }
     .card h2{
@@ -204,6 +328,10 @@
       border-top:1px solid var(--line);
     }
 
+    @media (max-width: 920px){
+      .heroTop{flex-direction:column-reverse; align-items:flex-start}
+      .avatarWrap{width:150px; height:190px}
+    }
     @media (max-width: 880px){
       h1{font-size:34px}
       .span-4{grid-column: span 12}
@@ -213,9 +341,23 @@
     }
     @media (prefers-reduced-motion: reduce){
       html{scroll-behavior:auto}
-      .btn:hover{transform:none}
+      .btn:hover, .iconBtn:hover{transform:none}
     }
   </style>
+
+  <script>
+    // Theme boot (runs ASAP to avoid flash)
+    (function () {
+      try {
+        const saved = localStorage.getItem("theme"); // "light" | "dark" | null
+        const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = saved || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        // If storage blocked, just default to system via CSS root (light) and do nothing
+      }
+    })();
+  </script>
 </head>
 
 <body>
@@ -225,34 +367,54 @@
         <div class="dot" aria-hidden="true"></div>
         <strong>Hridaya Singh</strong>
       </div>
-      <nav class="navlinks" aria-label="Primary">
-        <a href="#services">Focus</a>
-        <a href="#experience">Experience</a>
-        <a href="#credentials">Credentials</a>
-        <a href="#writing">Publications</a>
-        <a href="#contact">Contact</a>
-      </nav>
+
+      <div class="rightNav">
+        <nav class="navlinks" aria-label="Primary">
+          <a href="#services">Focus</a>
+          <a href="#experience">Experience</a>
+          <a href="#credentials">Credentials</a>
+          <a href="#writing">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Theme toggle -->
+        <button class="iconBtn" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+          <!-- icon swaps in JS -->
+          <svg id="themeIcon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.5 6.5 0 1 0 9.8 9.8Z"></path>
+          </svg>
+        </button>
+      </div>
     </header>
 
     <main>
       <section class="hero" id="top">
-        <div class="kicker"><span aria-hidden="true"></span> In-house Legal Counsel • Mumbai</div>
-        <h1>Practical, business-first legal support.</h1>
-        <p class="sub">
-          I work across corporate legal, compliance, contract management, and IP support—helping teams move fast without creating avoidable risk.
-        </p>
+        <div class="heroTop">
+          <div class="heroText">
+            <div class="kicker"><span aria-hidden="true"></span> In-house Legal Counsel • Mumbai</div>
+            <h1>Practical, business-first legal support.</h1>
+            <p class="sub">
+              I work across corporate legal, compliance, contract management, and IP support—helping teams move fast without creating avoidable risk.
+            </p>
 
-        <div class="ctas">
-          <a class="btn primary" href="mailto:hridayasingh0598@gmail.com">Email</a>
-          <a class="btn" href="https://www.linkedin.com/in/hridayasingh" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="btn" href="#contact">Quick intro</a>
-        </div>
+            <div class="ctas">
+              <a class="btn primary" href="mailto:hridayasingh0598@gmail.com">Email</a>
+              <a class="btn" href="https://www.linkedin.com/in/hridayasingh" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="btn" href="#contact">Quick intro</a>
+            </div>
 
-        <div class="metaRow" aria-label="Highlights">
-          <div class="pill">Contract management</div>
-          <div class="pill">Corporate compliance</div>
-          <div class="pill">IP support (trademarks/copyright)</div>
-          <div class="pill">Secretarial work</div>
+            <div class="metaRow" aria-label="Highlights">
+              <div class="pill">Contract management</div>
+              <div class="pill">Corporate compliance</div>
+              <div class="pill">IP support (trademarks/copyright)</div>
+              <div class="pill">Secretarial work</div>
+            </div>
+          </div>
+
+          <!-- Avatar -->
+          <div class="avatarWrap" aria-label="Profile photo">
+            <img class="avatar" src="static/me.png" alt="Profile photo" />
+          </div>
         </div>
       </section>
 
@@ -413,6 +575,44 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    const themeIcon = document.getElementById("themeIcon");
+    const toggleBtn = document.getElementById("themeToggle");
+
+    function setTheme(theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      try { localStorage.setItem("theme", theme); } catch(e) {}
+
+      // swap icon
+      if (theme === "dark") {
+        // sun
+        themeIcon.innerHTML = `
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+        `;
+        toggleBtn.setAttribute("aria-label", "Switch to light mode");
+        toggleBtn.title = "Switch to light mode";
+      } else {
+        // moon
+        themeIcon.innerHTML = `
+          <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.5 6.5 0 1 0 9.8 9.8Z"></path>
+        `;
+        toggleBtn.setAttribute("aria-label", "Switch to dark mode");
+        toggleBtn.title = "Switch to dark mode";
+      }
+    }
+
+    function getCurrentTheme() {
+      return document.documentElement.getAttribute("data-theme") || "light";
+    }
+
+    // ensure icon matches current theme on load
+    setTheme(getCurrentTheme());
+
+    toggleBtn.addEventListener("click", () => {
+      const current = getCurrentTheme();
+      setTheme(current === "dark" ? "light" : "dark");
+    });
   </script>
 </body>
 </html>
