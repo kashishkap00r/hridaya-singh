@@ -244,6 +244,10 @@
       align-items: start;
     }
 
+    .heroCopy {
+      min-width: 0;
+    }
+
     .kicker {
       display: inline-flex;
       align-items: center;
@@ -321,6 +325,23 @@
       background: #d8dde2;
       border-color: #d8dde2;
       color: #1a2127;
+    }
+
+    .metaRow {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .meta {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      font-size: 12px;
+      color: var(--muted);
+      background: var(--panel-soft);
+      font-weight: 500;
     }
 
     .photoCard {
@@ -752,34 +773,57 @@
       }
 
       .heroGrid {
-        display: block;
+        grid-template-columns: minmax(0, 1fr) 98px;
+        grid-template-areas:
+          "kicker kicker"
+          "title title"
+          "sub photo"
+          "cta photo";
+        gap: 10px 10px;
+        align-items: start;
       }
 
-      .heroGrid > div {
-        min-width: 0;
-        padding-right: 136px;
+      .heroCopy {
+        display: contents;
       }
 
-      h1 {
+      .heroCopy .kicker {
+        grid-area: kicker;
+        margin: 0;
+      }
+
+      .heroCopy h1 {
+        grid-area: title;
+        max-width: none;
+        margin: 0;
+      }
+
+      .heroCopy .sub {
+        grid-area: sub;
         max-width: none;
       }
 
-      .sub {
-        max-width: none;
+      .heroCopy .ctaRow {
+        grid-area: cta;
+        margin-top: 0;
+      }
+
+      .heroCopy .metaRow {
+        display: none;
       }
 
       .photoCard {
-        position: absolute;
-        right: 16px;
-        top: 18px;
-        width: 94px;
-        max-width: none;
+        grid-area: photo;
+        position: static;
+        width: 98px;
+        max-width: 98px;
         margin-top: 0;
         border-radius: 14px;
+        justify-self: end;
       }
 
       .photo {
-        height: 126px;
+        height: 132px;
       }
 
       .photoLabel {
@@ -870,7 +914,7 @@
     <main>
       <section class="panel hero reveal delay-1" id="top">
         <div class="heroGrid">
-          <div>
+          <div class="heroCopy">
             <div class="kicker"><span class="kickerDot" aria-hidden="true"></span>Bangalore · In House Legal Counsel</div>
             <h1>In-house legal counsel for regulated, high-growth tech companies.</h1>
             <p class="sub">Practical legal support across contracts, compliance, and governance. Built for fast-moving product and revenue teams.</p>
@@ -878,6 +922,12 @@
             <div class="ctaRow">
               <a class="btn primary" href="https://www.linkedin.com/in/hridayasingh" target="_blank" rel="noreferrer">LinkedIn</a>
               <a class="btn" href="mailto:hridayasingh0598@gmail.com">Email</a>
+            </div>
+
+            <div class="metaRow" aria-label="Recruiter snapshot">
+              <div class="meta">Technology and SaaS focus</div>
+              <div class="meta">India, US, EU, APAC exposure</div>
+              <div class="meta">Board and CXO advisory experience</div>
             </div>
           </div>
 
