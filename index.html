@@ -408,28 +408,12 @@
       border-color: rgba(211, 211, 211, 0.32);
     }
 
-    .metricMark {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 30px;
-      height: 24px;
-      padding: 0 8px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: var(--panel);
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.35px;
-      color: var(--accent);
-    }
-
     .metricValue {
       font-family: var(--display-font);
       font-size: clamp(28px, 3.5vw, 36px);
       line-height: 1;
       letter-spacing: -0.4px;
-      margin-top: 7px;
+      margin-top: 0;
       font-variant-numeric: tabular-nums;
     }
 
@@ -614,16 +598,17 @@
       line-height: 1.45;
     }
 
-    .tagNum {
+    .inlineMetric {
       display: inline-block;
+      padding: 0 5px;
+      border-radius: 6px;
       border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 1px 7px;
-      margin-right: 6px;
+      background: var(--panel);
       color: var(--text);
       font-weight: 700;
       font-size: 12px;
-      background: var(--panel);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
     }
 
     .credGrid {
@@ -889,22 +874,18 @@
 
       <section class="panel metrics reveal delay-2" id="highlights" aria-label="Key metrics">
         <article class="metric">
-          <span class="metricMark">§</span>
           <div class="metricValue">500+</div>
           <div class="metricLabel">SaaS and commercial agreements</div>
         </article>
         <article class="metric">
-          <span class="metricMark">TM</span>
           <div class="metricValue">100+</div>
           <div class="metricLabel">Trademarks managed</div>
         </article>
         <article class="metric">
-          <span class="metricMark">©</span>
           <div class="metricValue">400+</div>
           <div class="metricLabel">Copyright registrations</div>
         </article>
         <article class="metric">
-          <span class="metricMark">INTL</span>
           <div class="metricValue">4</div>
           <div class="metricLabel">Operating regions (India, US, EU, APAC)</div>
         </article>
@@ -954,10 +935,10 @@
               <div class="period">Jul 2024 - Present</div>
             </div>
             <ul class="bullets">
-              <li><span class="tagNum">Founding</span>Built the legal function from day one and set core review workflows.</li>
+              <li>Built the legal function from day one and set core review workflows.</li>
               <li>Created the first customer contract and NDA templates used across deals.</li>
               <li>Led vendor, payment, franchise, reseller, and cross-border contract work.</li>
-              <li><span class="tagNum">100+ / 400+</span>Led trademark and copyright filings to protect product and brand assets.</li>
+              <li>Led <span class="inlineMetric">100+</span> trademark and <span class="inlineMetric">400+</span> copyright filings to protect product and brand assets.</li>
               <li>Advised CXOs and the board on compliance, governance, audits, and dispute strategy.</li>
             </ul>
           </article>
@@ -971,10 +952,10 @@
               <div class="period">Dec 2022 - Jul 2024</div>
             </div>
             <ul class="bullets">
-              <li><span class="tagNum">500+</span>Closed SaaS agreements and NDAs across SME, mid-market, and enterprise accounts.</li>
+              <li>Closed <span class="inlineMetric">500+</span> SaaS agreements and NDAs across SME, mid-market, and enterprise accounts.</li>
               <li>Supported M&amp;A due diligence and negotiated key IP representations and clauses.</li>
-              <li><span class="tagNum">₹10+ Cr</span>Supported legal review for fundraising documentation and negotiations.</li>
-              <li><span class="tagNum">4 Markets</span>Handled contracts for UK, UAE, Indonesia, and Vietnam entities.</li>
+              <li>Supported legal review for <span class="inlineMetric">₹10+ Cr</span> fundraising documentation and negotiations.</li>
+              <li>Handled contracts across <span class="inlineMetric">4 markets</span>: UK, UAE, Indonesia, and Vietnam.</li>
               <li>Owned board packs, statutory filings, and ROC secretarial compliance.</li>
             </ul>
           </article>
@@ -988,7 +969,7 @@
               <div class="period">Apr 2021 - Nov 2022</div>
             </div>
             <ul class="bullets">
-              <li><span class="tagNum">150+</span>Managed civil, criminal, and commercial matters, including cases before the Madhya Pradesh High Court.</li>
+              <li>Managed <span class="inlineMetric">150+</span> civil, criminal, and commercial matters, including cases before the Madhya Pradesh High Court.</li>
               <li>Represented government and statutory bodies in complex proceedings.</li>
             </ul>
           </article>
