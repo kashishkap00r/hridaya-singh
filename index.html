@@ -618,10 +618,29 @@
     .insights {
       padding-top: 16px;
       padding-bottom: 16px;
+      box-shadow: none;
+      background: color-mix(in srgb, var(--panel) 96%, transparent);
     }
 
     .insights .sectionHead {
-      margin-bottom: 8px;
+      margin-bottom: 4px;
+      align-items: center;
+    }
+
+    .insights .sectionHead h2 {
+      font-family: var(--body-font);
+      font-size: 12px;
+      letter-spacing: 0.38px;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .insights .sectionHead span {
+      font-size: 10px;
+      letter-spacing: 0.34px;
+      color: var(--muted);
+      opacity: 0.85;
     }
 
     .insightsList {
@@ -637,7 +656,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 10px;
-      padding: 11px 2px;
+      padding: 10px 2px;
       border-top: 1px solid var(--line);
     }
 
@@ -648,31 +667,30 @@
 
     .insightLink {
       font-size: 13px;
-      color: var(--text);
+      color: var(--muted);
       line-height: 1.45;
-      text-decoration: underline;
-      text-decoration-thickness: 1px;
-      text-underline-offset: 2px;
-      text-decoration-color: color-mix(in srgb, var(--muted) 60%, transparent);
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--muted) 45%, transparent);
     }
 
     .insightLink:hover,
     .insightLink:focus-visible {
-      text-decoration-color: var(--text);
+      color: var(--text);
+      border-bottom-color: color-mix(in srgb, var(--text) 45%, transparent);
       outline: none;
     }
 
     .insightTag {
       flex-shrink: 0;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 2px 8px;
-      background: var(--panel-soft);
+      border: 0;
+      padding: 0;
+      background: transparent;
       color: var(--muted);
       font-size: 10px;
       text-transform: uppercase;
       letter-spacing: 0.3px;
-      font-weight: 600;
+      font-weight: 500;
+      opacity: 0.86;
       white-space: nowrap;
     }
 
@@ -1078,8 +1096,8 @@
 
       <section class="panel section insights reveal" id="insights">
         <div class="sectionHead">
-          <h2>From LinkedIn</h2>
-          <span>Legal bylines</span>
+          <h2>Legal Musings</h2>
+          <span>Selected notes</span>
         </div>
         <ul class="insightsList" aria-label="LinkedIn legal posts">
           <li class="insightItem">
