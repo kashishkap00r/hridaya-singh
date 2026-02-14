@@ -615,6 +615,67 @@
       white-space: nowrap;
     }
 
+    .insights {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .insights .sectionHead {
+      margin-bottom: 8px;
+    }
+
+    .insightsList {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0;
+    }
+
+    .insightItem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 11px 2px;
+      border-top: 1px solid var(--line);
+    }
+
+    .insightItem:first-child {
+      border-top: 0;
+      padding-top: 2px;
+    }
+
+    .insightLink {
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.45;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+      text-decoration-color: color-mix(in srgb, var(--muted) 60%, transparent);
+    }
+
+    .insightLink:hover,
+    .insightLink:focus-visible {
+      text-decoration-color: var(--text);
+      outline: none;
+    }
+
+    .insightTag {
+      flex-shrink: 0;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 2px 8px;
+      background: var(--panel-soft);
+      color: var(--muted);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
     .credGrid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -813,6 +874,14 @@
       .period {
         justify-self: start;
       }
+
+      .insightItem {
+        align-items: flex-start;
+      }
+
+      .insightTag {
+        margin-top: 2px;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1005,6 +1074,27 @@
             </ul>
           </article>
         </div>
+      </section>
+
+      <section class="panel section insights reveal" id="insights">
+        <div class="sectionHead">
+          <h2>From LinkedIn</h2>
+          <span>Legal bylines</span>
+        </div>
+        <ul class="insightsList" aria-label="LinkedIn legal posts">
+          <li class="insightItem">
+            <a class="insightLink" href="https://www.linkedin.com/posts/hridayasingh_one-accidental-whatsapp-status-and-suddenly-activity-7414571005995749376-d0Q6" target="_blank" rel="noreferrer noopener">One accidental WhatsApp status and suddenly a legal issue.</a>
+            <span class="insightTag">Privacy</span>
+          </li>
+          <li class="insightItem">
+            <a class="insightLink" href="https://www.linkedin.com/posts/hridayasingh_the-governments-sanchar-saathi-app-is-being-activity-7401933518223675392-SCk7" target="_blank" rel="noreferrer noopener">What the Sanchar Saathi rollout means from a legal lens.</a>
+            <span class="insightTag">Policy</span>
+          </li>
+          <li class="insightItem">
+            <a class="insightLink" href="https://www.linkedin.com/posts/hridayasingh_a-new-trademark-dispute-has-sparked-debate-activity-7398617265966899200-Igpb" target="_blank" rel="noreferrer noopener">A new trademark dispute and why the debate matters.</a>
+            <span class="insightTag">Trademark</span>
+          </li>
+        </ul>
       </section>
 
       <section class="panel section reveal" id="credentials">
