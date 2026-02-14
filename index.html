@@ -323,23 +323,6 @@
       color: #1a2127;
     }
 
-    .metaRow {
-      margin-top: 16px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .meta {
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 7px 10px;
-      font-size: 12px;
-      color: var(--muted);
-      background: var(--panel-soft);
-      font-weight: 500;
-    }
-
     .photoCard {
       width: 100%;
       max-width: 215px;
@@ -768,7 +751,50 @@
         padding: 16px;
       }
 
-      .metrics,
+      .heroGrid {
+        display: block;
+      }
+
+      .heroGrid > div {
+        min-width: 0;
+        padding-right: 136px;
+      }
+
+      h1 {
+        max-width: none;
+      }
+
+      .sub {
+        max-width: none;
+      }
+
+      .photoCard {
+        position: absolute;
+        right: 16px;
+        top: 18px;
+        width: 94px;
+        max-width: none;
+        margin-top: 0;
+        border-radius: 14px;
+      }
+
+      .photo {
+        height: 126px;
+      }
+
+      .photoLabel {
+        display: none;
+      }
+
+      .metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .metric {
+        min-height: 96px;
+        padding: 12px;
+      }
+
       .expertiseGrid,
       .credGrid {
         grid-template-columns: 1fr;
@@ -846,18 +872,12 @@
         <div class="heroGrid">
           <div>
             <div class="kicker"><span class="kickerDot" aria-hidden="true"></span>Bangalore · In House Legal Counsel</div>
-            <h1>In-house legal counsel for high-growth, regulated tech companies.</h1>
+            <h1>In-house legal counsel for regulated, high-growth tech companies.</h1>
             <p class="sub">Practical legal support across contracts, compliance, and governance. Built for fast-moving product and revenue teams.</p>
 
             <div class="ctaRow">
               <a class="btn primary" href="https://www.linkedin.com/in/hridayasingh" target="_blank" rel="noreferrer">LinkedIn</a>
               <a class="btn" href="mailto:hridayasingh0598@gmail.com">Email</a>
-            </div>
-
-            <div class="metaRow" aria-label="Recruiter snapshot">
-              <div class="meta">Technology and SaaS focus</div>
-              <div class="meta">India, US, EU, APAC exposure</div>
-              <div class="meta">Board and CXO advisory experience</div>
             </div>
           </div>
 
