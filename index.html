@@ -3,623 +3,1099 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="In-house legal counsel focused on building and scaling legal operations, high-volume SaaS contracting, and cross-border regulatory compliance." />
-  <title>Hridaya Singh — Legal Counsel</title>
+  <meta name="description" content="In-house legal counsel with experience in SaaS contracting, cross-border compliance, and IP strategy for high-growth technology companies." />
+  <title>Hridaya Singh | Senior In-House Counsel</title>
 
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="static/favikon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Hridaya Singh — Legal Counsel" />
-  <meta property="og:description" content="Building and scaling in-house legal for regulated, fast-growing tech companies." />
+  <meta property="og:title" content="Hridaya Singh | Senior In-House Counsel" />
+  <meta property="og:description" content="Metric-led legal profile for recruiter review: contracting at scale, compliance, governance, and cross-border execution." />
   <meta property="og:type" content="website" />
 
   <style>
-    :root{
-      /* shared */
-      --radius:18px;
-      --max: 1040px;
-      --shadow: 0 16px 50px rgba(0,0,0,.18);
-      --shadow-strong: 0 16px 50px rgba(0,0,0,.45);
+    :root {
+      --charcoal: #36454f;
+      --slate: #708090;
+      --light-gray: #d3d3d3;
+      --white: #ffffff;
 
-      /* LIGHT (default) */
-      --bg:#f6f7fb;
-      --card:rgba(255,255,255,.75);
-      --text:#0b1220;
-      --muted:#4b5568;
-      --line:rgba(2,6,23,.10);
-      --accent:#0284c7;
-      --accent2:#7c3aed;
+      --bg: #f7f8f9;
+      --panel: #ffffff;
+      --panel-soft: #f0f2f4;
+      --text: #1f2a33;
+      --muted: #5f6e7a;
+      --line: rgba(54, 69, 79, 0.24);
+      --accent: #36454f;
+      --accent-soft: #708090;
 
-      --bgGlow1: rgba(2,132,199,.10);
-      --bgGlow2: rgba(124,58,237,.10);
-      --glass: rgba(255,255,255,.65);
+      --body-font: "IBM Plex Sans", "DejaVu Sans", sans-serif;
+      --display-font: "IBM Plex Serif", "DejaVu Serif", serif;
+      --radius: 16px;
+      --shadow-soft: 0 16px 36px rgba(54, 69, 79, 0.08);
+      --shadow-strong: 0 18px 42px rgba(54, 69, 79, 0.16);
+      --max: 1080px;
     }
 
-    html[data-theme="dark"]{
-      --bg:#0b0c10;
-      --card:rgba(18,20,26,.72);
-      --text:#e9edf5;
-      --muted:#a9b2c3;
-      --line:rgba(255,255,255,.10);
-      --accent:#7dd3fc;
-      --accent2:#a78bfa;
-
-      --bgGlow1: rgba(125,211,252,.16);
-      --bgGlow2: rgba(167,139,250,.14);
-      --glass: rgba(18,20,26,.70);
+    html[data-theme="dark"] {
+      --bg: #0f1317;
+      --panel: #171d22;
+      --panel-soft: #1f282f;
+      --text: #eef2f5;
+      --muted: #b2bcc5;
+      --line: rgba(211, 211, 211, 0.18);
+      --accent: #d3d3d3;
+      --accent-soft: #aeb8c0;
+      --shadow-soft: 0 16px 36px rgba(0, 0, 0, 0.35);
+      --shadow-strong: 0 18px 42px rgba(0, 0, 0, 0.44);
     }
 
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: var(--body-font);
+      line-height: 1.5;
       background:
-        radial-gradient(1200px 500px at 12% -10%, var(--bgGlow1), transparent 60%),
-        radial-gradient(900px 450px at 88% 0%, var(--bgGlow2), transparent 60%),
+        radial-gradient(900px 420px at 8% -5%, rgba(112, 128, 144, 0.15), transparent 65%),
+        radial-gradient(840px 420px at 88% -5%, rgba(54, 69, 79, 0.12), transparent 68%),
+        repeating-linear-gradient(90deg, transparent, transparent 22px, rgba(112, 128, 144, 0.04) 23px),
         var(--bg);
-      color:var(--text);
-      line-height:1.55;
+      min-height: 100vh;
     }
 
-    a{color:inherit; text-decoration:none}
-    a:hover{opacity:.9}
-
-    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 70px}
-
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:14px; padding:12px 12px;
-      border:1px solid var(--line);
-      background: var(--glass);
-      backdrop-filter: blur(10px);
-      border-radius:999px;
-      position:sticky; top:14px; z-index:50;
-      box-shadow: var(--shadow);
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    .brand{display:flex; align-items:center; gap:10px; padding-left:6px}
-    .dot{
-      width:10px; height:10px; border-radius:999px;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      box-shadow: 0 0 0 6px rgba(2,132,199,.10);
-    }
-    html[data-theme="dark"] .dot{
-      box-shadow: 0 0 0 6px rgba(125,211,252,.10);
-    }
-    .brand strong{font-size:14px; letter-spacing:.2px}
-
-    .rightNav{display:flex; align-items:center; gap:8px; flex-wrap:wrap; justify-content:flex-end}
-    .navlinks{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
-
-    .navlinks a{
-      font-size:13px; color:var(--muted);
-      padding:8px 10px; border-radius:999px;
-      border:1px solid transparent;
-    }
-    .navlinks a:hover{
-      color:var(--text);
-      border-color:var(--line);
-      background:rgba(255,255,255,.25);
-    }
-    html[data-theme="dark"] .navlinks a:hover{
-      background:rgba(255,255,255,.04);
+    .wrap {
+      width: min(var(--max), 100% - 34px);
+      margin: 0 auto;
+      padding: 24px 0 70px;
     }
 
-    .iconBtn{
-      display:inline-flex; align-items:center; justify-content:center;
-      width:38px; height:38px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.35);
-      cursor:pointer;
-      transition: transform .12s ease;
-    }
-    html[data-theme="dark"] .iconBtn{background:rgba(255,255,255,.04)}
-    .iconBtn:hover{transform: translateY(-1px)}
-    .iconBtn svg{width:18px; height:18px; fill: none; stroke: var(--text); stroke-width: 1.7}
-
-    .hero{
-      margin-top:26px;
-      border:1px solid var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.55));
-      border-radius: var(--radius);
-      padding:26px 22px;
-      box-shadow: var(--shadow);
-      overflow:hidden;
-      position:relative;
-    }
-    html[data-theme="dark"] .hero{
-      background: linear-gradient(180deg, rgba(18,20,26,.92), rgba(18,20,26,.62));
-      box-shadow: var(--shadow-strong);
-    }
-    .hero:before{
-      content:"";
-      position:absolute; inset:-2px;
-      background:
-        radial-gradient(700px 260px at 15% 20%, var(--bgGlow1), transparent 55%),
-        radial-gradient(650px 260px at 90% 35%, var(--bgGlow2), transparent 55%);
-      pointer-events:none;
-    }
-    .hero > *{position:relative}
-
-    .heroTop{
-      display:flex;
-      align-items:flex-start;
-      justify-content:space-between;
-      gap:18px;
-    }
-
-    /* ===== Avatar (OVAL) ===== */
-    .avatarWrap{
-      flex: 0 0 auto;
-      width: 168px;
-      height: 210px;
-      border-radius: 999px;
-      overflow: hidden;
+    .nav {
+      position: sticky;
+      top: 14px;
+      z-index: 40;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
       border: 1px solid var(--line);
-      background: rgba(255,255,255,.35);
-      box-shadow: 0 18px 50px rgba(0,0,0,.18);
-      position:relative;
-    }
-    html[data-theme="dark"] .avatarWrap{
-      background: rgba(255,255,255,.04);
-      box-shadow: 0 18px 50px rgba(0,0,0,.45);
-    }
-    .avatarWrap:after{
-      content:"";
-      position:absolute;
-      inset:0;
-      border-radius:999px;
-      background: radial-gradient(120px 160px at 35% 30%, rgba(255,255,255,.28), transparent 60%);
-      pointer-events:none;
-    }
-    html[data-theme="dark"] .avatarWrap:after{
-      background: radial-gradient(120px 160px at 35% 30%, rgba(255,255,255,.10), transparent 60%);
-    }
-    .avatar{
-      width:100%;
-      height:100%;
-      object-fit: cover;
-      object-position: 50% 35%;
-      display:block;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--panel) 88%, transparent);
+      backdrop-filter: blur(8px);
+      padding: 10px 12px 10px 14px;
+      box-shadow: var(--shadow-soft);
     }
 
-    .kicker{
-      display:inline-flex; align-items:center; gap:10px;
-      font-size:13px; color:var(--muted);
-      padding:8px 12px; border-radius:999px;
-      background:rgba(255,255,255,.35);
-      border:1px solid var(--line);
-    }
-    html[data-theme="dark"] .kicker{
-      background:rgba(255,255,255,.04);
-    }
-    .kicker span{
-      width:8px; height:8px; border-radius:999px;
-      background: var(--accent);
-      box-shadow: 0 0 0 6px rgba(2,132,199,.10);
-    }
-    html[data-theme="dark"] .kicker span{
-      box-shadow: 0 0 0 6px rgba(125,211,252,.10);
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
     }
 
-    h1{
-      margin:14px 0 6px;
-      font-size:40px;
-      line-height:1.08;
-      letter-spacing:-.8px;
-    }
-    .sub{
-      margin:0;
-      color:var(--muted);
-      font-size:16px;
-      max-width:78ch;
+    .seal {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: var(--panel-soft);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--accent);
     }
 
-    .ctas{
-      margin-top:16px;
-      display:flex; gap:10px; flex-wrap:wrap;
+    .brandText strong {
+      display: block;
+      font-family: var(--display-font);
+      font-size: 15px;
+      line-height: 1.1;
+      letter-spacing: 0.14px;
     }
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:10px;
-      padding:10px 14px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.35);
-      color:var(--text);
-      font-size:14px;
-      transition: transform .12s ease;
-    }
-    html[data-theme="dark"] .btn{background:rgba(255,255,255,.04)}
-    .btn.primary{
-      border-color: rgba(2,132,199,.28);
-      background: linear-gradient(135deg, rgba(2,132,199,.14), rgba(124,58,237,.10));
-    }
-    html[data-theme="dark"] .btn.primary{
-      border-color: rgba(125,211,252,.28);
-      background: linear-gradient(135deg, rgba(125,211,252,.14), rgba(167,139,250,.10));
-    }
-    .btn:hover{transform: translateY(-1px)}
 
-    .metaRow{
-      margin-top:14px;
-      display:flex; flex-wrap:wrap; gap:10px;
-      color:var(--muted);
-      font-size:13px;
+    .brandText span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.26px;
+      text-transform: uppercase;
     }
-    .pill{
-      padding:8px 10px;
-      border:1px solid var(--line);
-      border-radius:999px;
-      background:rgba(255,255,255,.28);
-    }
-    html[data-theme="dark"] .pill{background:rgba(255,255,255,.03)}
 
-    section{margin-top:22px}
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap:14px;
+    .rightNav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
     }
-    .card{
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.75);
+
+    .navLinks {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .navLinks a {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      border: 1px solid transparent;
+      border-radius: 999px;
+      padding: 8px 10px;
+      transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+    }
+
+    .navLinks a:hover,
+    .navLinks a:focus-visible {
+      color: var(--text);
+      border-color: var(--line);
+      background: var(--panel-soft);
+      outline: none;
+    }
+
+    .iconBtn {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--panel-soft);
+      color: var(--text);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.15s ease;
+    }
+
+    .iconBtn:hover,
+    .iconBtn:focus-visible {
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .modeIcon {
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    main {
+      margin-top: 26px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
       border-radius: var(--radius);
-      padding:18px 16px;
-      box-shadow: 0 10px 40px rgba(0,0,0,.12);
-    }
-    html[data-theme="dark"] .card{
-      background: rgba(18,20,26,.72);
-      box-shadow: 0 10px 40px rgba(0,0,0,.25);
-    }
-    .card h2{
-      margin:0 0 8px;
-      font-size:16px;
-      letter-spacing:-.2px;
-    }
-    .card p{margin:0; color:var(--muted); font-size:14px}
-
-    .span-4{grid-column: span 4}
-    .span-6{grid-column: span 6}
-    .span-8{grid-column: span 8}
-    .span-12{grid-column: span 12}
-
-    .sectionTitle{
-      display:flex; align-items:baseline; justify-content:space-between;
-      margin-bottom:10px;
-      padding: 0 4px;
-    }
-    .sectionTitle h3{
-      margin:0;
-      font-size:15px;
-      color:var(--text);
-      letter-spacing:-.2px;
-    }
-    .sectionTitle .hint{color:var(--muted); font-size:13px}
-
-    ul.clean{margin:10px 0 0; padding:0 0 0 18px; color:var(--muted); font-size:14px}
-    ul.clean li{margin:6px 0}
-
-    .timeline .role{
-      display:flex; gap:14px; align-items:flex-start;
-      padding:14px 0;
-      border-top:1px solid var(--line);
-    }
-    .timeline .role:first-child{border-top:none; padding-top:0}
-    .when{
-      min-width:160px;
-      color:var(--muted);
-      font-size:13px;
-    }
-    .what strong{display:block; font-size:14px; color:var(--text)}
-    .what .place{display:block; font-size:13px; color:var(--muted); margin-top:2px}
-    .what .bul{margin-top:8px}
-
-    .footer{
-      margin-top:28px;
-      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
-      color:var(--muted); font-size:13px;
-      padding:16px 4px 0;
-      border-top:1px solid var(--line);
+      background: var(--panel);
+      box-shadow: var(--shadow-soft);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
     }
 
-    @media (max-width: 920px){
-      .heroTop{flex-direction:column-reverse; align-items:flex-start}
-      .avatarWrap{width:150px; height:190px}
+    .hero {
+      padding: 26px;
+      overflow: hidden;
+      position: relative;
     }
-    @media (max-width: 880px){
-      h1{font-size:34px}
-      .span-4{grid-column: span 12}
-      .span-6{grid-column: span 12}
-      .span-8{grid-column: span 12}
-      .when{min-width:130px}
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(500px 220px at 10% 18%, rgba(112, 128, 144, 0.14), transparent 65%),
+        radial-gradient(500px 220px at 88% 16%, rgba(54, 69, 79, 0.12), transparent 68%);
+      pointer-events: none;
     }
-    @media (prefers-reduced-motion: reduce){
-      html{scroll-behavior:auto}
-      .btn:hover, .iconBtn:hover{transform:none}
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 26px;
+      right: 26px;
+      top: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      pointer-events: none;
+    }
+
+    .heroGrid {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 215px;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 11px;
+      font-size: 12px;
+      color: var(--muted);
+      background: var(--panel-soft);
+      font-weight: 600;
+      letter-spacing: 0.24px;
+      text-transform: uppercase;
+    }
+
+    .kickerDot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h1 {
+      margin: 14px 0 10px;
+      font-family: var(--display-font);
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.08;
+      letter-spacing: -0.58px;
+      max-width: 20ch;
+    }
+
+    .sub {
+      margin: 0;
+      max-width: 66ch;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .ctaRow {
+      margin-top: 17px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--panel-soft);
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 16px rgba(54, 69, 79, 0.12);
+      outline: none;
+    }
+
+    .btn.primary {
+      background: var(--charcoal);
+      border-color: var(--charcoal);
+      color: var(--white);
+    }
+
+    html[data-theme="dark"] .btn.primary {
+      background: #d8dde2;
+      border-color: #d8dde2;
+      color: #1a2127;
+    }
+
+    .metaRow {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .meta {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      font-size: 12px;
+      color: var(--muted);
+      background: var(--panel-soft);
+      font-weight: 500;
+    }
+
+    .photoCard {
+      width: 100%;
+      max-width: 215px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      overflow: hidden;
+      background: var(--panel-soft);
+      box-shadow: var(--shadow-strong);
+      justify-self: end;
+    }
+
+    .photo {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      object-position: 50% 34%;
+      display: block;
+      filter: saturate(0.9) contrast(1.02);
+    }
+
+    .photoLabel {
+      border-top: 1px solid var(--line);
+      padding: 10px 12px;
+      display: grid;
+      gap: 2px;
+      background: var(--panel);
+    }
+
+    .photoLabel strong {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    .photoLabel span {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .metrics {
+      padding: 18px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel-soft);
+      padding: 14px;
+      min-height: 108px;
+      display: grid;
+      align-content: start;
+      gap: 5px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .metric:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(54, 69, 79, 0.12);
+      border-color: rgba(54, 69, 79, 0.35);
+    }
+
+    html[data-theme="dark"] .metric:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.34);
+      border-color: rgba(211, 211, 211, 0.32);
+    }
+
+    .metricMark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 30px;
+      height: 24px;
+      padding: 0 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--panel);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.35px;
+      color: var(--accent);
+    }
+
+    .metricValue {
+      font-family: var(--display-font);
+      font-size: clamp(28px, 3.5vw, 36px);
+      line-height: 1;
+      letter-spacing: -0.4px;
+      margin-top: 7px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .metricLabel {
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.45px;
+      font-weight: 600;
+    }
+
+    .section {
+      padding: 20px;
+    }
+
+    .sectionHead {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .sectionHead h2 {
+      margin: 0;
+      font-family: var(--display-font);
+      font-size: 22px;
+      letter-spacing: -0.2px;
+    }
+
+    .sectionHead span {
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.34px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .sectionLead {
+      margin: -2px 0 12px;
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 74ch;
+      line-height: 1.55;
+      font-style: italic;
+    }
+
+    .expertiseGrid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .expertiseCard {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel-soft);
+      padding: 13px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .expertiseCard::before {
+      content: "";
+      position: absolute;
+      left: 13px;
+      top: 0;
+      width: 32px;
+      height: 3px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      background: var(--accent-soft);
+      opacity: 0.55;
+    }
+
+    .expertiseCard:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(54, 69, 79, 0.11);
+      border-color: rgba(54, 69, 79, 0.35);
+    }
+
+    html[data-theme="dark"] .expertiseCard:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.34);
+      border-color: rgba(211, 211, 211, 0.32);
+    }
+
+    .expertiseCard h3 {
+      margin: 0 0 7px;
+      font-size: 14px;
+      line-height: 1.3;
+      letter-spacing: -0.1px;
+    }
+
+    .expertiseCard p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 10px;
+    }
+
+    .role {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel-soft);
+      padding: 14px 14px 14px 18px;
+      position: relative;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .role::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 14px;
+      bottom: 14px;
+      width: 3px;
+      border-top-right-radius: 999px;
+      border-bottom-right-radius: 999px;
+      background: linear-gradient(180deg, var(--accent), var(--accent-soft));
+      opacity: 0.75;
+    }
+
+    .role:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(54, 69, 79, 0.11);
+      border-color: rgba(54, 69, 79, 0.35);
+    }
+
+    html[data-theme="dark"] .role:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.34);
+      border-color: rgba(211, 211, 211, 0.32);
+    }
+
+    .roleTop {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: start;
+    }
+
+    .roleTop h3 {
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: -0.2px;
+      line-height: 1.3;
+    }
+
+    .roleTop p {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .period {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 9px;
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.35px;
+      background: var(--panel);
+      white-space: nowrap;
+    }
+
+    .bullets {
+      margin: 11px 0 0;
+      padding-left: 18px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .bullets li {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .tagNum {
+      display: inline-block;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 1px 7px;
+      margin-right: 6px;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 12px;
+      background: var(--panel);
+    }
+
+    .credGrid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .miniCard {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel-soft);
+      padding: 13px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .miniCard:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(54, 69, 79, 0.11);
+      border-color: rgba(54, 69, 79, 0.35);
+    }
+
+    html[data-theme="dark"] .miniCard:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.34);
+      border-color: rgba(211, 211, 211, 0.32);
+    }
+
+    .miniCard h3 {
+      margin: 0 0 5px;
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    .miniCard p {
+      margin: 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .contactGrid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      gap: 10px;
+    }
+
+    .footer {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(14px);
+      animation: fade-up 0.5s ease forwards;
+    }
+
+    .reveal.delay-1 { animation-delay: 0.06s; }
+    .reveal.delay-2 { animation-delay: 0.12s; }
+    .reveal.delay-3 { animation-delay: 0.18s; }
+
+    @keyframes fade-up {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 990px) {
+      .heroGrid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .photoCard {
+        justify-self: start;
+        max-width: 180px;
+      }
+
+      .photo {
+        height: 220px;
+      }
+
+      .metrics,
+      .expertiseGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .contactGrid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .wrap {
+        width: calc(100% - 24px);
+        padding-top: 14px;
+      }
+
+      .nav {
+        position: static;
+        border-radius: 14px;
+        justify-content: center;
+        padding: 10px 46px 10px 12px;
+      }
+
+      .rightNav {
+        width: auto;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        justify-content: flex-end;
+      }
+
+      .navLinks {
+        display: none;
+      }
+
+      .brand {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .brandText {
+        text-align: center;
+      }
+
+      .brandText strong {
+        font-size: 16px;
+      }
+
+      .brandText span {
+        font-size: 10px;
+      }
+
+      .seal {
+        display: none;
+      }
+
+      .iconBtn {
+        width: 34px;
+        height: 34px;
+      }
+
+      main {
+        margin-top: 12px;
+      }
+
+      .hero,
+      .section {
+        padding: 16px;
+      }
+
+      .metrics,
+      .expertiseGrid,
+      .credGrid {
+        grid-template-columns: 1fr;
+      }
+
+      .roleTop {
+        grid-template-columns: 1fr;
+      }
+
+      .period {
+        justify-self: start;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+        animation: none;
+      }
+
+      .btn:hover,
+      .btn:focus-visible,
+      .iconBtn:hover,
+      .iconBtn:focus-visible {
+        transform: none;
+      }
     }
   </style>
 
   <script>
     (function () {
       try {
-        const saved = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const theme = saved || (prefersDark ? "dark" : "light");
-        document.documentElement.setAttribute("data-theme", theme);
-      } catch (e) {}
+        var savedTheme = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var selectedTheme = savedTheme || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", selectedTheme);
+      } catch (error) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
     })();
   </script>
 </head>
-
 <body>
   <div class="wrap">
-    <header class="nav">
+    <header class="nav reveal">
       <div class="brand">
-        <div class="dot" aria-hidden="true"></div>
-        <strong>Hridaya Singh</strong>
+        <div class="seal" aria-hidden="true">HS</div>
+        <div class="brandText">
+          <strong>Hridaya Singh</strong>
+          <span>In House Legal Counsel</span>
+        </div>
       </div>
 
       <div class="rightNav">
-        <nav class="navlinks" aria-label="Primary">
-          <a href="#services">Focus</a>
+        <nav class="navLinks" aria-label="Primary">
+          <a href="#highlights">Highlights</a>
+          <a href="#expertise">Expertise</a>
           <a href="#experience">Experience</a>
           <a href="#credentials">Credentials</a>
-          <a href="#recognition">Recognition</a>
           <a href="#contact">Contact</a>
         </nav>
-
-        <button class="iconBtn" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
-          <svg id="themeIcon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.5 6.5 0 1 0 9.8 9.8Z"></path>
-          </svg>
+        <button class="iconBtn" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+          <span class="modeIcon" aria-hidden="true">◐</span>
         </button>
       </div>
     </header>
 
     <main>
-      <section class="hero" id="top">
-        <div class="heroTop">
-          <div class="heroText">
-            <div class="kicker"><span aria-hidden="true"></span> In-house Legal Counsel • Mumbai</div>
+      <section class="panel hero reveal delay-1" id="top">
+        <div class="heroGrid">
+          <div>
+            <div class="kicker"><span class="kickerDot" aria-hidden="true"></span>Bangalore · In House Legal Counsel</div>
+            <h1>In-house legal counsel for high-growth, regulated tech companies.</h1>
+            <p class="sub">Practical legal support across contracts, compliance, and governance. Built for fast-moving product and revenue teams.</p>
 
-            <h1>Building and scaling in-house legal for regulated, fast-growing tech companies.</h1>
-
-            <p class="sub">
-              In-house legal counsel with hands-on experience setting up legal operations from scratch, managing high-volume SaaS contracting,
-              cross-border regulatory compliance, and advising leadership teams in complex, high-stakes environments.
-            </p>
-
-            <div class="ctas">
-              <a class="btn primary" href="mailto:hridayasingh0598@gmail.com">Email</a>
-              <a class="btn" href="https://www.linkedin.com/in/hridayasingh" target="_blank" rel="noreferrer">LinkedIn</a>
+            <div class="ctaRow">
+              <a class="btn primary" href="https://www.linkedin.com/in/hridayasingh" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="btn" href="mailto:hridayasingh0598@gmail.com">Email</a>
               <a class="btn" href="#contact">Quick intro</a>
             </div>
 
-            <div class="metaRow" aria-label="Credibility">
-              <div class="pill">Built in-house legal from ground up</div>
-              <div class="pill">500+ SaaS & commercial agreements</div>
-              <div class="pill">100+ trademarks • 400+ copyrights</div>
-              <div class="pill">Cross-border: India, US, EU, APAC</div>
+            <div class="metaRow" aria-label="Recruiter snapshot">
+              <div class="meta">Technology and SaaS focus</div>
+              <div class="meta">India, US, EU, APAC exposure</div>
+              <div class="meta">Board and CXO advisory experience</div>
             </div>
           </div>
 
-          <div class="avatarWrap" aria-label="Profile photo">
-            <img class="avatar" src="static/me.webp" alt="Profile photo" />
-          </div>
+          <figure class="photoCard">
+            <img class="photo" src="static/me.webp" alt="Portrait of Hridaya Singh" />
+            <figcaption class="photoLabel">
+              <strong>Corporate Legal Counsel</strong>
+              <span>Contracting · Compliance · Governance · IP</span>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
-      <section id="services">
-        <div class="sectionTitle">
-          <h3>Focus</h3>
-          <div class="hint">High-leverage work</div>
+      <section class="panel metrics reveal delay-2" id="highlights" aria-label="Key metrics">
+        <article class="metric">
+          <span class="metricMark">§</span>
+          <div class="metricValue">500+</div>
+          <div class="metricLabel">SaaS and commercial agreements</div>
+        </article>
+        <article class="metric">
+          <span class="metricMark">TM</span>
+          <div class="metricValue">100+</div>
+          <div class="metricLabel">Trademarks managed</div>
+        </article>
+        <article class="metric">
+          <span class="metricMark">©</span>
+          <div class="metricValue">400+</div>
+          <div class="metricLabel">Copyright registrations</div>
+        </article>
+        <article class="metric">
+          <span class="metricMark">INTL</span>
+          <div class="metricValue">4</div>
+          <div class="metricLabel">Operating regions (India, US, EU, APAC)</div>
+        </article>
+      </section>
+
+      <section class="panel section reveal" id="expertise">
+        <div class="sectionHead">
+          <h2>Core Expertise</h2>
+          <span>What I can own end-to-end</span>
         </div>
+        <p class="sectionLead">Hands-on support for growth teams, revenue teams, and leadership in regulated environments.</p>
 
-        <div class="grid">
-          <div class="card span-4">
-            <h2>Contracting at scale (SaaS & enterprise)</h2>
-            <p>Drafted, reviewed, and negotiated 500+ SaaS and commercial agreements across SME, mid-market, and enterprise customers.</p>
-          </div>
-
-          <div class="card span-4">
-            <h2>Regulatory & compliance readiness</h2>
-            <p>Owned compliance frameworks across data protection (DPDP, GDPR) and financial regulations (AML/KYC) in regulated environments.</p>
-          </div>
-
-          <div class="card span-4">
-            <h2>Cross-border legal operations</h2>
-            <p>Managed multi-jurisdiction work across India, US, EU, and APAC—aligning contracts, licensing, and regulatory requirements.</p>
-          </div>
-
-          <div class="card span-6">
-            <h2>IP strategy & asset protection</h2>
-            <p>Led IP strategy end-to-end, securing 100+ trademarks and 400+ copyright registrations to protect brand, product, and creative assets.</p>
-          </div>
-
-          <div class="card span-6">
-            <h2>Governance & leadership advisory</h2>
-            <p>Worked directly with CXOs and boards on corporate governance, fundraising, restructuring, risk assessments, and strategic decisions.</p>
-          </div>
+        <div class="expertiseGrid">
+          <article class="expertiseCard">
+            <h3>Contracting at Scale</h3>
+            <p>Enterprise SaaS, vendor, payment aggregation, franchise, reseller, and NDA workflows.</p>
+          </article>
+          <article class="expertiseCard">
+            <h3>Regulatory and Data Compliance</h3>
+            <p>Practical implementation across DPDP, GDPR, AML/KYC, and related policy frameworks.</p>
+          </article>
+          <article class="expertiseCard">
+            <h3>Governance and Leadership Advisory</h3>
+            <p>Board process management, legal risk reviews, and decision support for CXOs.</p>
+          </article>
+          <article class="expertiseCard">
+            <h3>IP and Brand Protection</h3>
+            <p>Trademark and copyright strategy to protect product, content, and commercial assets.</p>
+          </article>
         </div>
       </section>
 
-      <section id="experience">
-        <div class="sectionTitle">
-          <h3>Experience</h3>
-          <div class="hint">Selected highlights</div>
+      <section class="panel section reveal" id="experience">
+        <div class="sectionHead">
+          <h2>Experience</h2>
+          <span>Metric-led highlights</span>
         </div>
+        <p class="sectionLead">Short highlights from each role. Focus on ownership, volume, and business impact.</p>
 
-        <div class="card span-12 timeline">
-          <div class="role">
-            <div class="when">Jul 2024 — Present</div>
-            <div class="what">
-              <strong>Deputy Manager – Legal — HubbleHox Technologies (Ampersand Group)</strong>
-              <span class="place">Mumbai</span>
-              <ul class="clean bul">
-                <li>Founding member of the legal team, building end-to-end in-house legal operations from scratch.</li>
-                <li>Drafted the company’s first standard customer agreements and NDA templates, setting the baseline for all client engagements.</li>
-                <li>Led drafting and negotiation across vendor, payment aggregation, franchise, reseller, DPA, and cross-border commercial agreements.</li>
-                <li>Updated legal frameworks to align with DPDP, GDPR, AML/KYC, and evolving financial regulations.</li>
-                <li>Managed licensing, due diligence, and regulatory compliance for partnerships across US, EU, and APAC.</li>
-                <li>Oversaw IP strategy: 100+ trademarks and 400+ copyright filings.</li>
-                <li>Advised CXOs and handled board processes, governance, audits, and complex operational matters.</li>
-                <li>Resolved disputes through negotiation/mediation before escalation to litigation.</li>
-              </ul>
+        <div class="timeline">
+          <article class="role">
+            <div class="roleTop">
+              <div>
+                <h3>Deputy Manager - Legal, HubbleHox Technologies (Ampersand Group)</h3>
+                <p>Bangalore</p>
+              </div>
+              <div class="period">Jul 2024 - Present</div>
             </div>
-          </div>
+            <ul class="bullets">
+              <li><span class="tagNum">Founding</span>Built the legal function from day one and set core review workflows.</li>
+              <li>Created the first customer contract and NDA templates used across deals.</li>
+              <li>Led vendor, payment, franchise, reseller, and cross-border contract work.</li>
+              <li><span class="tagNum">100+ / 400+</span>Led trademark and copyright filings to protect product and brand assets.</li>
+              <li>Advised CXOs and the board on compliance, governance, audits, and dispute strategy.</li>
+            </ul>
+          </article>
 
-          <div class="role">
-            <div class="when">Dec 2022 — Jul 2024</div>
-            <div class="what">
-              <strong>Legal Executive — Mobisy Technologies (Bizom)</strong>
-              <span class="place">Bengaluru</span>
-              <ul class="clean bul">
-                <li>Closed 500+ SaaS service agreements and NDAs across SME, mid-market, and enterprise customers.</li>
-                <li>Supported M&A transactions, including legal due diligence and negotiation of key IP reps and warranties.</li>
-                <li>Managed legal aspects of fundraising exceeding ₹10+ Crores, including review of shareholder and share purchase agreements.</li>
-                <li>Handled cross-border customer agreements for subsidiaries in the UK, UAE, Indonesia, and Vietnam.</li>
-                <li>Led governance/secretarial work: board meetings, agendas, filings, and ROC compliance.</li>
-                <li>Advised CEOs, board members, and department heads on organizational legal and compliance matters.</li>
-              </ul>
+          <article class="role">
+            <div class="roleTop">
+              <div>
+                <h3>Legal Executive, Mobisy Technologies (Bizom)</h3>
+                <p>Bangalore</p>
+              </div>
+              <div class="period">Dec 2022 - Jul 2024</div>
             </div>
-          </div>
+            <ul class="bullets">
+              <li><span class="tagNum">500+</span>Closed SaaS agreements and NDAs across SME, mid-market, and enterprise accounts.</li>
+              <li>Supported M&amp;A due diligence and negotiated key IP representations and clauses.</li>
+              <li><span class="tagNum">₹10+ Cr</span>Supported legal review for fundraising documentation and negotiations.</li>
+              <li><span class="tagNum">4 Markets</span>Handled contracts for UK, UAE, Indonesia, and Vietnam entities.</li>
+              <li>Owned board packs, statutory filings, and ROC secretarial compliance.</li>
+            </ul>
+          </article>
 
-          <div class="role">
-            <div class="when">Apr 2021 — Nov 2022</div>
-            <div class="what">
-              <strong>Associate Lawyer — Manoj Dwivedi & Associates</strong>
-              <span class="place">Indore</span>
-              <ul class="clean bul">
-                <li>Litigated 150+ civil, criminal, and commercial matters, including representation before the Madhya Pradesh High Court.</li>
-                <li>Represented government bodies, public sector entities, and statutory authorities in complex legal proceedings.</li>
-              </ul>
+          <article class="role">
+            <div class="roleTop">
+              <div>
+                <h3>Associate Lawyer, Manoj Dwivedi &amp; Associates</h3>
+                <p>Indore</p>
+              </div>
+              <div class="period">Apr 2021 - Nov 2022</div>
             </div>
-          </div>
+            <ul class="bullets">
+              <li><span class="tagNum">150+</span>Managed civil, criminal, and commercial matters, including cases before the Madhya Pradesh High Court.</li>
+              <li>Represented government and statutory bodies in complex proceedings.</li>
+            </ul>
+          </article>
         </div>
       </section>
 
-      <section id="credentials">
-        <div class="sectionTitle">
-          <h3>Credentials</h3>
-          <div class="hint">Education & certification</div>
+      <section class="panel section reveal" id="credentials">
+        <div class="sectionHead">
+          <h2>Credentials and Recognition</h2>
+          <span>Formal qualifications and proof of trust</span>
         </div>
 
-        <div class="grid">
-          <div class="card span-6">
-            <h2>LL.M. — Banking, Corporate, Finance & Securities Law</h2>
+        <div class="credGrid">
+          <article class="miniCard">
+            <h3>LL.M. - Banking, Corporate, Finance and Securities Law</h3>
             <p>O.P. Jindal Global University</p>
-          </div>
-
-          <div class="card span-6">
-            <h2>B.B.A. LL.B.</h2>
-            <p>Prestige Institute of Management & Research, Department of Law</p>
-          </div>
-
-          <div class="card span-6">
-            <h2>Certification of Practice</h2>
+          </article>
+          <article class="miniCard">
+            <h3>B.B.A. LL.B.</h3>
+            <p>Prestige Institute of Management and Research, Department of Law</p>
+          </article>
+          <article class="miniCard">
+            <h3>Certification of Practice</h3>
             <p>Bar Council of India</p>
-          </div>
-
-          <div class="card span-6">
-            <h2>Company Secretary (Professional Programme)</h2>
-            <p>Institute of Company Secretaries of India (pursuing)</p>
-          </div>
+          </article>
+          <article class="miniCard">
+            <h3>Company Secretary (Professional Programme)</h3>
+            <p>Institute of Company Secretaries of India - pursuing</p>
+          </article>
+          <article class="miniCard">
+            <h3>Spot Award - HubbleHox</h3>
+            <p>Recognized for setting up legal operations, compliance frameworks, and IP systems at pace.</p>
+          </article>
+          <article class="miniCard">
+            <h3>Leadership Program Selection - Mobisy (Bizom)</h3>
+            <p>Selected for independent ownership of legal and secretarial responsibilities.</p>
+          </article>
         </div>
       </section>
 
-      <section id="recognition">
-        <div class="sectionTitle">
-          <h3>Recognition</h3>
-          <div class="hint">Signals that matter</div>
+      <section class="panel section reveal" id="contact">
+        <div class="sectionHead">
+          <h2>Contact</h2>
+          <span>Recruiter-friendly next step</span>
         </div>
 
-        <div class="grid">
-          <div class="card span-6">
-            <h2>Spot Award — HubbleHox</h2>
-            <p>Recognized for building and streamlining legal operations, compliance frameworks, and IP strategy within months of joining.</p>
-          </div>
-
-          <div class="card span-6">
-            <h2>Leadership Program Selection — Mobisy (Bizom)</h2>
-            <p>Recognized for independently managing corporate legal and secretarial functions and providing strategic support to leadership.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact">
-        <div class="sectionTitle">
-          <h3>Contact</h3>
-          <div class="hint">Recruiter-friendly</div>
-        </div>
-
-        <div class="grid">
-          <div class="card span-8">
-            <h2>Currently open to senior in-house legal roles in technology-driven organizations.</h2>
-            <p>Best way to reach me: email. LinkedIn also works.</p>
-
-            <div class="ctas" style="margin-top:14px">
-              <a class="btn primary" href="mailto:hridayasingh0598@gmail.com">hridayasingh0598@gmail.com</a>
-              <a class="btn" href="https://www.linkedin.com/in/hridayasingh" target="_blank" rel="noreferrer">LinkedIn profile</a>
+        <div class="contactGrid">
+          <article class="miniCard">
+            <h3>In-house legal counsel for technology-led organizations.</h3>
+            <p>Best first touchpoint is LinkedIn. Email works for direct role briefs, timelines, and scope details.</p>
+            <div class="ctaRow">
+              <a class="btn primary" href="https://www.linkedin.com/in/hridayasingh" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+              <a class="btn" href="mailto:hridayasingh0598@gmail.com">hridayasingh0598@gmail.com</a>
             </div>
-          </div>
-
-          <div class="card span-4">
-            <h2>Based in</h2>
-            <p>Mumbai, India</p>
-            <p style="margin-top:10px;color:var(--muted);font-size:13px">
-              If you’re reaching out for a role, a short note with the level, scope, and timeline helps.
-            </p>
-          </div>
+          </article>
+          <article class="miniCard">
+            <h3>Based in</h3>
+            <p>Bangalore, India</p>
+            <p style="margin-top: 9px;">For role outreach, please include level, mandate, and hiring timeline.</p>
+          </article>
         </div>
 
-        <div class="footer">
-          <div>© <span id="year"></span> Hridaya Singh</div>
-          <div><a href="#top">Back to top ↑</a></div>
-        </div>
+        <footer class="footer">
+          <span>© <span id="year"></span> Hridaya Singh</span>
+          <a href="#top">Back to top ↑</a>
+        </footer>
       </section>
     </main>
   </div>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    const themeIcon = document.getElementById("themeIcon");
-    const toggleBtn = document.getElementById("themeToggle");
-
-    function setTheme(theme) {
-      document.documentElement.setAttribute("data-theme", theme);
-      try { localStorage.setItem("theme", theme); } catch(e) {}
-
-      if (theme === "dark") {
-        themeIcon.innerHTML = `
-          <circle cx="12" cy="12" r="4"></circle>
-          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
-        `;
-        toggleBtn.setAttribute("aria-label", "Switch to light mode");
-        toggleBtn.title = "Switch to light mode";
-      } else {
-        themeIcon.innerHTML = `
-          <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.5 6.5 0 1 0 9.8 9.8Z"></path>
-        `;
-        toggleBtn.setAttribute("aria-label", "Switch to dark mode");
-        toggleBtn.title = "Switch to dark mode";
-      }
+    var year = document.getElementById("year");
+    if (year) {
+      year.textContent = new Date().getFullYear();
     }
 
-    function getCurrentTheme() {
+    var button = document.getElementById("themeToggle");
+    var modeIcon = document.querySelector("#themeToggle .modeIcon");
+
+    function getTheme() {
       return document.documentElement.getAttribute("data-theme") || "light";
     }
 
-    setTheme(getCurrentTheme());
+    function setTheme(theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      try {
+        localStorage.setItem("theme", theme);
+      } catch (error) {
+      }
 
-    toggleBtn.addEventListener("click", () => {
-      const current = getCurrentTheme();
-      setTheme(current === "dark" ? "light" : "dark");
-    });
+      if (button) {
+        var isDark = theme === "dark";
+        button.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+        button.setAttribute("title", isDark ? "Switch to light mode" : "Switch to dark mode");
+        if (modeIcon) {
+          modeIcon.textContent = isDark ? "◑" : "◐";
+        }
+      }
+    }
+
+    setTheme(getTheme());
+
+    if (button) {
+      button.addEventListener("click", function () {
+        setTheme(getTheme() === "dark" ? "light" : "dark");
+      });
+    }
   </script>
 </body>
 </html>
