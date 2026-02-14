@@ -773,39 +773,11 @@
       }
 
       .heroGrid {
-        grid-template-columns: minmax(0, 1fr) 98px;
-        grid-template-areas:
-          "kicker kicker"
-          "title title"
-          "sub sub"
-          "cta photo";
-        gap: 10px 10px;
-        align-items: start;
+        display: block;
       }
 
       .heroCopy {
-        display: contents;
-      }
-
-      .heroCopy .kicker {
-        grid-area: kicker;
-        margin: 0;
-      }
-
-      .heroCopy h1 {
-        grid-area: title;
-        max-width: none;
-        margin: 0;
-      }
-
-      .heroCopy .sub {
-        grid-area: sub;
-        max-width: none;
-      }
-
-      .heroCopy .ctaRow {
-        grid-area: cta;
-        margin-top: 0;
+        display: block;
       }
 
       .heroCopy .metaRow {
@@ -813,18 +785,7 @@
       }
 
       .photoCard {
-        grid-area: photo;
-        position: static;
-        width: 92px;
-        max-width: 92px;
-        margin-top: 0;
-        border-radius: 14px;
-        justify-self: end;
-        align-self: end;
-      }
-
-      .photo {
-        height: 124px;
+        display: none;
       }
 
       .photoLabel {
